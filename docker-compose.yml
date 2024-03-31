@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nodejs-app-to-dockerize:
+    image: node:18 # corrected the image name to use the official Node.js image
+    container_name: nodejs-app-to-dockerize
+    working_dir: /app # corrected working directory syntax
+    # comments: npm run start  # Removed this line as comments are not valid in YAML
+    ports: 
+      - "8001:8001"  # corrected the ports syntax by adding a space after the hyphen
